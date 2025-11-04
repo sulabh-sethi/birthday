@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>{{ subject }}</title>
+    <style>
+        body { font-family: Arial, sans-serif; color: #111; }
+        .container { max-width: 560px; margin: 0 auto; padding: 24px; }
+        h2 { font-weight: 600; }
+        p { line-height: 1.6; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Hello {{ name }},</h2>
+    <p>Congratulations on your {{ occasion }}.</p>
+    {{ if years_completed }}<p>It's been {{ years_completed }} amazing years with {{ company_name }}.</p>{{ end }}
+    <p>Best wishes,<br />{{ signature }}</p>
+</div>
+</body>
+</html>

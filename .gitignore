@@ -1,0 +1,17 @@
+bin/
+obj/
+*.user
+*.rsuser
+*.suo
+*.cache
+*.log
+*.vs/
+.vscode/
+TestResults/
+logs/
+out/
+coverage/
+*.nupkg
+*.snk
+*.swp
+.DS_Store

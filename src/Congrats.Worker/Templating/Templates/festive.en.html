@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>{{ subject }}</title>
+    <style>
+        body { margin: 0; background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%); font-family: 'Montserrat', sans-serif; }
+        .card { max-width: 640px; margin: 40px auto; background-color: rgba(255,255,255,0.95); border-radius: 16px; padding: 40px; text-align: center; }
+        h1 { font-size: 36px; margin-bottom: 16px; color: #c62828; }
+        p { font-size: 18px; color: #4e342e; }
+        .badge { display: inline-block; padding: 8px 16px; border-radius: 999px; background-color: #ff7043; color: #fff; margin-top: 16px; }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h1>Cheers, {{ first_name }}! 🎉</h1>
+    <p>Sending love and appreciation from everyone at {{ company_name }}.</p>
+    <p>{{ occasion }} celebrations are always better with you!</p>
+    {{ if years_completed }}<div class="badge">Celebrating {{ years_completed }} years!</div>{{ end }}
+    <p style="margin-top:24px; font-size:16px;">— {{ signature }}</p>
+</div>
+</body>
+</html>

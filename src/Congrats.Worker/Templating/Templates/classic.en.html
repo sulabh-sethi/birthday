@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>{{ subject }}</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f6f6f6; padding: 32px; }
+        .card { background-color: #ffffff; border-radius: 12px; padding: 32px; box-shadow: 0 2px 12px rgba(0,0,0,.08); }
+        .header { font-size: 24px; color: #2d2d2d; margin-bottom: 16px; }
+        .occasion { font-size: 18px; color: #6a1b9a; margin-bottom: 24px; }
+        .footer { margin-top: 24px; font-size: 14px; color: #555; }
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="header">Hi {{ first_name }}!</div>
+    <div class="occasion">We're thrilled to celebrate your {{ occasion }} today.</div>
+    <p>All of us at {{ company_name }} send our warmest wishes. Thank you for everything you do{{ if years_completed }} — here's to {{ years_completed }} incredible years!{{ end }}.</p>
+    {{ if card_image_url }}
+    <p><img src="{{ card_image_url }}" alt="Celebration" width="480" /></p>
+    {{ end }}
+    <div class="footer">With gratitude,<br />{{ signature }}</div>
+</div>
+</body>
+</html>
